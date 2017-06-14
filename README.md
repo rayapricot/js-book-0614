@@ -25,12 +25,196 @@ function sum() {
 	window.alert(total);
 }
 undefined
+sum();
+undefined
+function sum(rangeTo) {
+    var total = 0;
+    for (var counter = 1; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefined
+function sum(rangeFrom,rangeTo) {
+    var total = 0;
+	for (var counter = 2; counter <= 5; counter <= 5; counter++) {
+		total += counter;
+    }
+	window.alert(total);
+VM864:3 Uncaught SyntaxError: Unexpected token ;
+
+    var total = 0;
+	for (var counter = 2; counter <= 5; counter <= 5; counter++) {
+		total += counter;
+    }
+	window.alert(total);
+VM897:3 Uncaught SyntaxError: Unexpected token ;
+var total = 0;
+for (var counter = 2; counter <= 5; counter <= 5; counter++) {
+	total += counter;
+}
+window.alert(total);
+VM914:2 Uncaught SyntaxError: Unexpected token ;
+
+    var total = 0;
+	for (var counter = 2; counter <= 5; counter++) {
+		total += counter;
+    }
+	window.alert(total);
+undefined
+function sum(rangeFrom, rangeTo) {
+    var total = 0;
+	for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefined
+sum(1,10);
+undefined
+sum(2,5);
+undefined
+var total = 0;
+for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+    total += counter;
+}
+window.alert(total);
+VM1318:2 Uncaught ReferenceError: rangeFrom is not defined
+    at <anonymous>:2:20
+    var total = 0;
+for (var counter = 2; counter <= 5; counter++) {
+	total += counter;
+}
+window.alert(total);
+undefined
+function sum(rangeFrom,rangeTo = 10) {
+    var total = 0;
+	for (var counter = rangeFrom; counter <= ranfgeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefined
+function sum(rangeFrom,rangeTo = 10) {
+    var total = 0;
+	for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefined
+sum(1);
+undefined
+function sum(rangeFrom = 1, rangeTo) {	// エラー
+}
+undefined
+function sum(rangeTo, rangeFrom = 1) {
+    var total = 0;
+	for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefined
+sum(10);
+undefined
+function sum(rangeTo, rangeFrom = 1) {
+	var total = 0;
+	for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefined
+sum(10);
+undefined
+total;
+14
+sum(2,5);
+undefined
+total;
+14
+var hoge = 5;
+function testScope() {
+    window.alert(hoge);
+}
+undefined
+testScope();
+undefined
+function sum(rangeFrom, rangeTo) {
+    let total = 0;
+	for (let counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefine
+function sum(rangeFrom, rangeTo) {
+    let total = 0;
+	for (let counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    window.alert(total);
+}
+undefined
+sum(1,10);
+undefined
+function sum(rangeFrom,rangeTo,withDialog) {
+    var total = 0;
+	for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    if(withDialog){
+        window.alert(total);
+    }else{
+        console.log(total);
+    }
+}
+undefined
+var total = 0;
+function sum(rangeFrom, rangeTo) {
+	for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+}
+undefined
+sum(1,10);
+undefined
+window.alert(total);
+undefined
+sum(1,10);
+undefined
+window.alert(total);
+undefined
+function sum(rangeFrom,rangeTo) {
+    var total = 0;
+	for (var counter = rangeFrom; counter <= rangeTo; counter++) {
+        total += counter;
+    }
+    return total;}
+undefined
+sum(1,10);
+55
+window.alert(sum(1,10));
+undefined
 ```
 
 ### Console以外の動き（もしあれば）
 
-【ここに書く（なければ省略可）】
-
+このページの内容５５がでた
+このページの内容１４がでた
+このページの内容５５がでた
+このページの内容１４がでた
+このページの内容１４がでた
+このページの内容５５がでた
+このページの内容５５がでた
+このページの内容５５がでた
+このページの内容１４がでた
+このページの内容５がでた
+このページの内容５５がでた
+このページの内容５５がでた
+このページの内容１１０がでた
+このページの内容５５がでた
 ### 分かったこと
 
 【ここに書く】
