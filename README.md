@@ -17,7 +17,14 @@
 ### Consoleの実行ログ
 
 ```
-【ここに書く】
+function sum() {
+    var total = 0;
+	for (var counter = 1; counter <= 10; counter++) {
+        total += counter;
+    }
+	window.alert(total);
+}
+undefined
 ```
 
 ### Console以外の動き（もしあれば）
